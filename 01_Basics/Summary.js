@@ -22,7 +22,7 @@ const anotherId = Symbol('123')
 // console.log(id === anotherId );
 
 const BigNumber = 65416846465165467684n
-console.log("BigInt " + typeof BigNumber);
+// console.log("BigInt " + typeof BigNumber);
 
 
 // Reference (non-primitive)
@@ -43,11 +43,11 @@ const myFun =  function(){
 }
 // myFun()
 
-console.log(typeof Email)
-console.log(typeof outsideTemp)
-console.log( typeof myObj);
-console.log(typeof myFun);
-console.log(typeof heros);
+// console.log(typeof Email)
+// console.log(typeof outsideTemp)
+// console.log( typeof myObj);
+// console.log(typeof myFun);
+// console.log(typeof heros);
 
 
 
@@ -65,3 +65,37 @@ console.log(typeof heros);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+
+// *****************************************************
+
+// Stack (Primitive) give Copy, Heap(Non-Primitive) give reference
+
+let myName = "AdityaWani"
+
+let anotherName = myName
+
+anotherName = "JAVASCRIPT"
+
+console.log(anotherName);
+console.log(myName);
+
+
+// Goes to heap
+let user1 = {
+
+        email : "user@google.com",
+        upi : "user@ybl" 
+}
+
+
+let user2 = user1
+
+user2.email= "aditya@google.com"
+// Change in both the user objects 
+
+
+console.log(user1.email);
+console.log(user2.email);
+
