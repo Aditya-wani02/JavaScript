@@ -1,7 +1,7 @@
 const name = "Aditya"
 const repoCount = 18
 
-// const gameName = new String("Game Box Contra")
+const gameName = new String("Game Box Contra")
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
 
@@ -16,12 +16,23 @@ const repoCount = 18
 
 
 // Not working
-const gameName = new String("Game Box Contra");
-const anotherString = gameName.slice(-8, 4);
-console.log(anotherString);
+// const gameName = new String("gameboxContra");
+// const anotherString = gameName.slice(-13,4);
+// console.log(anotherString);
+
+// const newString = "      Aditya   "
+// console.log(newString);
+// console.log(newString.trim());
+
+const url = "https://google.com/home%20happy"
+// console.log(url.replace('%20','-'));
+
+// console.log(url.includes("google"));
 
 
+// based on any char
 
+console.log(gameName.split(' '));
 
 
 
