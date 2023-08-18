@@ -30,7 +30,7 @@ const obj4 = {5:"A" , 6:"B"}
 
 const obj3 = {...obj1 , ...obj2,...obj4}
 
-console.log(obj3);
+// console.log(obj3);
 
 
 const user = [
@@ -65,4 +65,29 @@ const user = [
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+    coursename : "js on github",
+    price : "999",
+    courseInstructor : "Sammy"
+
+}
+
+// course.courseInstructor
+
+
+//  destructure
+
+const {courseInstructor : instructor} = course
+console.log(instructor);
+
+// {
+//     "name": "Aditya",
+//     "coursename" : "js on github",
+//     "price" : "free"
+// }
+
+// [
+//     {},{},{},{}
+// ]
