@@ -1,8 +1,18 @@
 // Immediately Invoked Fuction Expression () [IIFE]
 
 
-function chai(){
+(function chai(){
+    // name iife
     console.log("Chai pi lo");
-}
+})();
 
-chai()
+( function code() {
+    console.log("code kr lo");
+
+})();
+
+(  (name) =>{
+    console.log("code kr lo" , name);
+
+})("Aditya");
+
